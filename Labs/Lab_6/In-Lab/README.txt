@@ -7,7 +7,9 @@ Answers in: Lab6_P1_KevinGallardo.pdf
 
 code:
   hello.sh
-            
+  
+How to run:
+  ./hello.sh          
 
 
  

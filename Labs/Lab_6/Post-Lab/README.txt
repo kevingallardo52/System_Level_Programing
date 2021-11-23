@@ -8,7 +8,8 @@ Answers in: Lab6_P2_KevinGallardo.pdf
 code:
   myName.c
             
-
+How to run:
+  ./myName.c
 
  
 
