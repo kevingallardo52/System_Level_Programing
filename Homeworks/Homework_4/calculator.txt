@@ -1,0 +1,38 @@
+# !/bin/bash
+bool=true
+while $bool;do
+echo "Enter The first number: "
+read x
+echo "Enter The second number: "
+read y 
+  
+# Provide Operation Input #
+echo "Enter Your Choice Of Operation:"
+echo "1. Addition"
+echo "2. Subtraction"
+echo "3. Multiplication"
+echo "4. Division"
+echo "5. Modulus "
+read ch
+case $ch in
+  1)res=`echo $x + $y | bc`
+  ;;
+  2)res=`echo $x - $y | bc`
+  ;;
+  3)res=`echo $x \* $y | bc`
+  ;;
+  4)res=`echo "scale=2; $x / $y" | bc`
+  ;; 
+  5)res=`echo "scale=2; $x % $y" | bc`
+esac
+echo "Result : $res"
+echo "6) Clear and Continue"
+echo "7) cancel"
+read ch1
+case $ch1 in
+6)clear
+continue
+;;
+7)esac
+break
+done

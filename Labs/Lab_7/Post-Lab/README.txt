@@ -10,6 +10,12 @@ code:
   getPhoneNumber.c
             
 
+How to run:
 
+  cc getPhoneNumber.c
+  ./a.out
+  cc calcPrice.c
+  ./a.out
+  
  
 

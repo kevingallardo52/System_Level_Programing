@@ -1,0 +1,28 @@
+
+#!/bin/sh
+
+echo "Welcome to computer science society."
+
+echo -n  "Today is : "
+date
+
+echo */ | wc -w
+
+echo "HOME= "$PATH
+
+echo 'USER='$USER
+
+echo 'SHELL='$SHELL
+
+echo -n "Disk usage is: "
+df
+
+echo "PLease, could you loan me \$25.oo?"
+
+echo "if x=2, x8x = 4, x/2=1"
+
+echo -n
+ls  c*.sh
+
+echo -n "Good bye!!! THe current hour is = "
+date +%H

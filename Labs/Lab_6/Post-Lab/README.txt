@@ -9,7 +9,9 @@ code:
   myName.c
             
 How to run:
-  ./myName.c
+  cc myName.c
+  ./a.out
+  
 
  
 

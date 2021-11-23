@@ -9,6 +9,7 @@ code:
   hello.sh
   
 How to run:
+  chmod +755 hello.sh
   ./hello.sh          
 
 

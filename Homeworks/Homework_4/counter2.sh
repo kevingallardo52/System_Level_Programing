@@ -1,10 +1,8 @@
 #!/bin/bash
 
-# counter.sh  counts the number of statements
+# counter2.sh  tabular list of that shows the number of words and number of letters in each statement
 #Kevin Gallardo 
 #kgallardowepster1@student.gsu.edu
-
-# find_statements function
 
 function find_statements() {
         i=0
@@ -18,7 +16,16 @@ function find_statements() {
                 done
         done < $1
         
-        echo "There are total ${#statements[@]} statements"
+        echo -e "\t\tWords\tletters"
+        i=1
+        
+        for statement in ${statements[@]}
+        do
+                words=$(echo $statement | wc -w)
+                letters=$(echo $statement | tr -d ' ' | wc -c)
+                echo -e "Statement $i:\t  $words\t  $((letters-1))"
+                i=$((i+1))
+        done
 }
 
 if(($#==1))
