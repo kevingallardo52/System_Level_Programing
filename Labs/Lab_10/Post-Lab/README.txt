@@ -8,6 +8,11 @@ Code:
   strcpy.c
   findStr.c
 
-
+How to run:
+ cc strcpy.c
+ ./a.out
+  cc findStr.c
+ ./a.out
+ 
  
 
